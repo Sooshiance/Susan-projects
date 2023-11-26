@@ -1,6 +1,3 @@
-# import numpy as np 
-
-
 ################################################### Find even and odd numbers ###################################################
 
 
@@ -83,5 +80,5 @@ last_l = l[:-3]
 l_reverse = l[::-1]
 
 print(f'the 4 elements from the first position of list are {first_l}\n')
-print(f'the 4 elements from the last position of list are {last_l}\n')
+print(f'the 3 elements from the last position of list are {last_l}\n')
 print(f'the revert of the list is {l_reverse}\n')

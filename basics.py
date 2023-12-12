@@ -66,6 +66,22 @@
 # print(l[9])
 
 
+################################################### Upper & Lower ###################################################
+
+
+a = 10
+b = 50
+
+print(f"{a}")
+print(f"{b}")
+
+
+b, a = a, b
+
+print(f"new a is {a}")
+print(f"new b is {b}")
+
+
 ################################################### Lists ###################################################
 
 
@@ -82,3 +98,15 @@ l_reverse = l[::-1]
 print(f'the 4 elements from the first position of list are {first_l}\n')
 print(f'the 3 elements from the last position of list are {last_l}\n')
 print(f'the revert of the list is {l_reverse}\n')
+
+
+list1 = [5, 4, 3, 2, 1]
+list2 = list1
+list1 = list1 + [1, 2, 3, 4]
+
+# Contents of list1 are same as above 
+# program, but contents of list2 are
+# different.
+print(list1)
+print(list2)
+print(list2)

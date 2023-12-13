@@ -110,3 +110,11 @@ list1 = list1 + [1, 2, 3, 4]
 print(list1)
 print(list2)
 print(list2)
+
+
+
+################################################### sets ###################################################
+
+
+myset = {1,2,4,4,5,8,9,9,10}  
+print("Return set with unique elements:", myset) 

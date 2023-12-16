@@ -118,3 +118,51 @@ print(list2)
 
 myset = {1,2,4,4,5,8,9,9,10}  
 print("Return set with unique elements:", myset) 
+
+
+# join two sets
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+# Keep ONLY the Duplicates
+z = x.intersection(y)
+
+# Return a set that contains the items that exist in both set x, and set y
+x.intersection_update(y)
+
+print(z)
+print(x)
+
+
+# Keep All, But NOT the Duplicates
+a = {"apple", "banana", "cherry"}
+b = {"google", "microsoft", "apple"}
+
+a.symmetric_difference_update(b)
+
+print(a)
+
+
+# Return a set that contains all items from both sets
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.symmetric_difference(y)
+
+print(z)
+
+
+# The values True and 1 are considered the same
+x = {"apple", "banana", "cherry", True}
+y = {"google", 1, "apple", 2}
+
+z = x.symmetric_difference(y)
+
+print(z)

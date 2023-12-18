@@ -69,100 +69,107 @@
 ################################################### swaping numbers ###################################################
 
 
-a = 10
-b = 50
+# a = 10
+# b = 50
 
-print(f"{a}")
-print(f"{b}")
+# print(f"{a}")
+# print(f"{b}")
 
 
-b, a = a, b
+# b, a = a, b
 
-print(f"new a is {a}")
-print(f"new b is {b}")
+# print(f"new a is {a}")
+# print(f"new b is {b}")
 
 
 ################################################### Lists ###################################################
 
 
-l = []
+# l = []
 
-for i in range(1, 10):
-    e = int(input(f'enter the element {i} : \t'))
-    l.append(e)
+# for i in range(1, 10):
+#     e = int(input(f'enter the element {i} : \t'))
+#     l.append(e)
 
-first_l = l[:4]
-last_l = l[:-3]
-l_reverse = l[::-1]
+# first_l = l[:4]
+# last_l = l[:-3]
+# l_reverse = l[::-1]
 
-print(f'the 4 elements from the first position of list are {first_l}\n')
-print(f'the 3 elements from the last position of list are {last_l}\n')
-print(f'the revert of the list is {l_reverse}\n')
+# print(f'the 4 elements from the first position of list are {first_l}\n')
+# print(f'the 3 elements from the last position of list are {last_l}\n')
+# print(f'the revert of the list is {l_reverse}\n')
 
 
-list1 = [5, 4, 3, 2, 1]
-list2 = list1
-list1 = list1 + [1, 2, 3, 4]
+# list1 = [5, 4, 3, 2, 1]
+# list2 = list1
+# list1 = list1 + [1, 2, 3, 4]
 
-# Contents of list1 are same as above 
-# program, but contents of list2 are
-# different.
-print(list1)
-print(list2)
-print(list2)
+# # Contents of list1 are same as above 
+# # program, but contents of list2 are
+# # different.
+# print(list1)
+# print(list2)
+# print(list2)
 
 
 
 ################################################### sets ###################################################
 
 
-myset = {1,2,4,4,5,8,9,9,10}  
-print("Return set with unique elements:", myset) 
+# myset = {1,2,4,4,5,8,9,9,10}  
+# print("Return set with unique elements:", myset) 
 
 
 # join two sets
-set1 = {"a", "b" , "c"}
-set2 = {1, 2, 3}
+# set1 = {"a", "b" , "c"}
+# set2 = {1, 2, 3}
 
-set3 = set1.union(set2)
-print(set3)
+# set3 = set1.union(set2)
+# print(set3)
 
 
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
 
 # Keep ONLY the Duplicates
-z = x.intersection(y)
+# z = x.intersection(y)
 
 # Return a set that contains the items that exist in both set x, and set y
-x.intersection_update(y)
+# x.intersection_update(y)
 
-print(z)
-print(x)
+# print(z)
+# print(x)
 
 
 # Keep All, But NOT the Duplicates
-a = {"apple", "banana", "cherry"}
-b = {"google", "microsoft", "apple"}
+# a = {"apple", "banana", "cherry"}
+# b = {"google", "microsoft", "apple"}
 
-a.symmetric_difference_update(b)
+# a.symmetric_difference_update(b)
 
-print(a)
+# print(a)
 
 
 # Return a set that contains all items from both sets
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
 
-z = x.symmetric_difference(y)
+# z = x.symmetric_difference(y)
 
-print(z)
+# print(z)
 
 
-# The values True and 1 are considered the same
-x = {"apple", "banana", "cherry", True}
-y = {"google", 1, "apple", 2}
+# # The values True and 1 are considered the same
+# x = {"apple", "banana", "cherry", True}
+# y = {"google", 1, "apple", 2}
 
-z = x.symmetric_difference(y)
+# z = x.symmetric_difference(y)
 
-print(z)
+# print(z)
+
+
+months = set(["January","February", "March", "April", "May", "June"])    
+print("\nprinting the original set ... ")    
+print(months)    
+print("\nAdding other months to the set...");    
+months.add("July"); 

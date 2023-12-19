@@ -168,8 +168,42 @@
 # print(z)
 
 
-months = set(["January","February", "March", "April", "May", "June"])    
-print("\nprinting the original set ... ")    
-print(months)    
-print("\nAdding other months to the set...");    
-months.add("July"); 
+# months = set(["January","February", "March", "April", "May", "June"])    
+# print("\nprinting the original set ... ")    
+# print(months)    
+# print("\nAdding other months to the set...");    
+# months.add("July"); 
+
+
+################################################ Dictionary ################################################
+
+
+Employee = {"Name": "Johnny", "Age": 32, "salary":26000,"Company":"^TCS"}        
+print(type(Employee))        
+print("printing Employee data .... ")        
+print(Employee)  
+
+
+Employees = {"Name": "Dev", "Age": 20, "salary":45000,"Company":"WIPRO"}      
+print(type(Employees))      
+print("printing Employee data .... ")      
+print("Name : %s" %Employees["Name"])      
+print("Age : %d" %Employees["Age"])      
+print("Salary : %d" %Employees["salary"])      
+print("Company : %s" %Employees["Company"])   
+
+
+Dict1 = {1: 'JavaTpoint', 2: 'Educational', 3: 'Website'}
+pop_key = Dict1.pop(2)
+
+
+dict_demo = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}    
+print(dict_demo.keys())
+
+
+dict = {1: "Hcl", 2: "WIPRO", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}
+print(dict.items())
+print(dict.get(3)) 
+dict.update({3: "TCS"})
+print(dict)
+print(dict.values())
